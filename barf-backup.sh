@@ -9,6 +9,14 @@ source .env
 cd $TARGET_DIR
 
 # Stage all changes and log the result
+if git pull >> "$GIT_LOG_FILE" 2>&1; then
+    echo "$LOG_DATE - Changes pulled successfully" >> "$LOG_FILE"
+else
+    echo "$(date +'%Y-%m-%d %H:%M:%S') - Error pulling changes from git" >> "$LOG_FILE"
+    exit 1
+fi
+
+# Stage all changes and log the result
 if git add . >> "$GIT_LOG_FILE" 2>&1; then
     echo "$LOG_DATE - Changes staged successfully" >> "$LOG_FILE"
 else
