@@ -1,6 +1,6 @@
 # barf-backup
 
-A script that I use to backup my [barf](https://git.btxx.org/barf/)-based blog to a git repo. You will have to initialized the directory to be backed up as a Git repo with a remote before using. 
+A script that I use to backup my [barf](https://git.btxx.org/barf/)-based blog to a Git repo. You will have to initialized the directory to be backed up as a Git repo with a remote before using. 
 
 You can configure the script by creating a `.env` file with the following variables (All paths must be absolute and must be in quotes):
 
