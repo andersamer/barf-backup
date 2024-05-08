@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# TODO: Find a way to decrease noise in logs
+# TODO: Get better logging for Git errors
 
 # Load in the configuration variables from the .env file
 source .env
